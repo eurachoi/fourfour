@@ -14,6 +14,12 @@
 		2FF75E391D25CE7F009D99F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF75E371D25CE7F009D99F0 /* LaunchScreen.storyboard */; };
 		2FF75E441D25CE7F009D99F0 /* fourfourTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF75E431D25CE7F009D99F0 /* fourfourTests.swift */; };
 		2FF75E4F1D25CE7F009D99F0 /* fourfourUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF75E4E1D25CE7F009D99F0 /* fourfourUITests.swift */; };
+		2FF75E621D25E089009D99F0 /* DaysOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FF75E601D25E089009D99F0 /* DaysOne-Regular.ttf */; };
+		2FF75E631D25E089009D99F0 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2FF75E611D25E089009D99F0 /* OFL.txt */; };
+		2FF75E671D26D501009D99F0 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF75E661D26D501009D99F0 /* Cell.swift */; };
+		52E40354B1C4D5E6B2F21D30 /* Pods_fourfourTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7FCB879E276164A6A25B33 /* Pods_fourfourTests.framework */; };
+		CAEDD6AE5BB963FBB2CCA9DE /* Pods_fourfour.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 376C84B5530FE8DE806BD52D /* Pods_fourfour.framework */; };
+		E69D37855E2B114604B8E6A9 /* Pods_fourfourUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7D3913F75BF5B6751F1F37 /* Pods_fourfourUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0A3D9DBEF9292C6EEA0194 /* Pods-fourfourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfourTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fourfourTests/Pods-fourfourTests.release.xcconfig"; sourceTree = "<group>"; };
+		1D7FCB879E276164A6A25B33 /* Pods_fourfourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF75E2B1D25CE7F009D99F0 /* fourfour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fourfour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF75E2E1D25CE7F009D99F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FF75E301D25CE7F009D99F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +55,16 @@
 		2FF75E4A1D25CE7F009D99F0 /* fourfourUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fourfourUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF75E4E1D25CE7F009D99F0 /* fourfourUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fourfourUITests.swift; sourceTree = "<group>"; };
 		2FF75E501D25CE7F009D99F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF75E601D25E089009D99F0 /* DaysOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "DaysOne-Regular.ttf"; sourceTree = "<group>"; };
+		2FF75E611D25E089009D99F0 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		2FF75E661D26D501009D99F0 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = fourfour/fourfour/fourfour/Cell.swift; sourceTree = "<group>"; };
+		376C84B5530FE8DE806BD52D /* Pods_fourfour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7604B1A711556AE0C39ED2E6 /* Pods-fourfourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfourUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fourfourUITests/Pods-fourfourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B5A0A540EABF68C3B831254F /* Pods-fourfourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfourTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fourfourTests/Pods-fourfourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7D3913F75BF5B6751F1F37 /* Pods_fourfourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9BAF52BCC3F0F3A88364A55 /* Pods-fourfour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfour.release.xcconfig"; path = "Pods/Target Support Files/Pods-fourfour/Pods-fourfour.release.xcconfig"; sourceTree = "<group>"; };
+		CD33EF7F709D2BACB25B6028 /* Pods-fourfour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfour.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fourfour/Pods-fourfour.debug.xcconfig"; sourceTree = "<group>"; };
+		E240C26F266A78D5E30310B1 /* Pods-fourfourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfourUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-fourfourUITests/Pods-fourfourUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAEDD6AE5BB963FBB2CCA9DE /* Pods_fourfour.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E40354B1C4D5E6B2F21D30 /* Pods_fourfourTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E69D37855E2B114604B8E6A9 /* Pods_fourfourUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +98,13 @@
 		2FF75E221D25CE7F009D99F0 = {
 			isa = PBXGroup;
 			children = (
+				2FF75E5E1D25E070009D99F0 /* Resources */,
 				2FF75E2D1D25CE7F009D99F0 /* fourfour */,
 				2FF75E421D25CE7F009D99F0 /* fourfourTests */,
 				2FF75E4D1D25CE7F009D99F0 /* fourfourUITests */,
 				2FF75E2C1D25CE7F009D99F0 /* Products */,
+				A1F7A1E4E76F291531F49005 /* Pods */,
+				FECB80D1A546BB07457C84F8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +127,7 @@
 				2FF75E351D25CE7F009D99F0 /* Assets.xcassets */,
 				2FF75E371D25CE7F009D99F0 /* LaunchScreen.storyboard */,
 				2FF75E3A1D25CE7F009D99F0 /* Info.plist */,
+				2FF75E661D26D501009D99F0 /* Cell.swift */,
 			);
 			path = fourfour;
 			sourceTree = "<group>";
@@ -125,6 +150,46 @@
 			path = fourfourUITests;
 			sourceTree = "<group>";
 		};
+		2FF75E5E1D25E070009D99F0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FF75E5F1D25E089009D99F0 /* days-one */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FF75E5F1D25E089009D99F0 /* days-one */ = {
+			isa = PBXGroup;
+			children = (
+				2FF75E601D25E089009D99F0 /* DaysOne-Regular.ttf */,
+				2FF75E611D25E089009D99F0 /* OFL.txt */,
+			);
+			path = "days-one";
+			sourceTree = "<group>";
+		};
+		A1F7A1E4E76F291531F49005 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD33EF7F709D2BACB25B6028 /* Pods-fourfour.debug.xcconfig */,
+				C9BAF52BCC3F0F3A88364A55 /* Pods-fourfour.release.xcconfig */,
+				B5A0A540EABF68C3B831254F /* Pods-fourfourTests.debug.xcconfig */,
+				0D0A3D9DBEF9292C6EEA0194 /* Pods-fourfourTests.release.xcconfig */,
+				E240C26F266A78D5E30310B1 /* Pods-fourfourUITests.debug.xcconfig */,
+				7604B1A711556AE0C39ED2E6 /* Pods-fourfourUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FECB80D1A546BB07457C84F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				376C84B5530FE8DE806BD52D /* Pods_fourfour.framework */,
+				1D7FCB879E276164A6A25B33 /* Pods_fourfourTests.framework */,
+				BD7D3913F75BF5B6751F1F37 /* Pods_fourfourUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FF75E531D25CE7F009D99F0 /* Build configuration list for PBXNativeTarget "fourfour" */;
 			buildPhases = (
+				55C52C5F16BD33A0B9BEFD66 /* [CP] Check Pods Manifest.lock */,
 				2FF75E271D25CE7F009D99F0 /* Sources */,
 				2FF75E281D25CE7F009D99F0 /* Frameworks */,
 				2FF75E291D25CE7F009D99F0 /* Resources */,
+				4F2FD3CFF613A47544CCC60D /* [CP] Embed Pods Frameworks */,
+				B29F83BDDF0630C3EB88A7F9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +217,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FF75E561D25CE7F009D99F0 /* Build configuration list for PBXNativeTarget "fourfourTests" */;
 			buildPhases = (
+				6F6C7F406D11B6F53D889EE8 /* [CP] Check Pods Manifest.lock */,
 				2FF75E3B1D25CE7F009D99F0 /* Sources */,
 				2FF75E3C1D25CE7F009D99F0 /* Frameworks */,
 				2FF75E3D1D25CE7F009D99F0 /* Resources */,
+				0B5AECC946958C775E9878D9 /* [CP] Embed Pods Frameworks */,
+				1B765E675755C60713B7C278 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +238,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FF75E591D25CE7F009D99F0 /* Build configuration list for PBXNativeTarget "fourfourUITests" */;
 			buildPhases = (
+				14279570EA874CCB741587CC /* [CP] Check Pods Manifest.lock */,
 				2FF75E461D25CE7F009D99F0 /* Sources */,
 				2FF75E471D25CE7F009D99F0 /* Frameworks */,
 				2FF75E481D25CE7F009D99F0 /* Resources */,
+				8CDBA1DA586248FACAF92283 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +266,7 @@
 				TargetAttributes = {
 					2FF75E2A1D25CE7F009D99F0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 9U564KP2NN;
 					};
 					2FF75E3E1D25CE7F009D99F0 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -229,7 +303,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FF75E631D25E089009D99F0 /* OFL.txt in Resources */,
 				2FF75E391D25CE7F009D99F0 /* LaunchScreen.storyboard in Resources */,
+				2FF75E621D25E089009D99F0 /* DaysOne-Regular.ttf in Resources */,
 				2FF75E361D25CE7F009D99F0 /* Assets.xcassets in Resources */,
 				2FF75E341D25CE7F009D99F0 /* Main.storyboard in Resources */,
 			);
@@ -251,12 +327,136 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0B5AECC946958C775E9878D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourfourTests/Pods-fourfourTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14279570EA874CCB741587CC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1B765E675755C60713B7C278 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourfourTests/Pods-fourfourTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4F2FD3CFF613A47544CCC60D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourfour/Pods-fourfour-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55C52C5F16BD33A0B9BEFD66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F6C7F406D11B6F53D889EE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8CDBA1DA586248FACAF92283 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourfourUITests/Pods-fourfourUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B29F83BDDF0630C3EB88A7F9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-fourfour/Pods-fourfour-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FF75E271D25CE7F009D99F0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2FF75E311D25CE7F009D99F0 /* ViewController.swift in Sources */,
+				2FF75E671D26D501009D99F0 /* Cell.swift in Sources */,
 				2FF75E2F1D25CE7F009D99F0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,28 +599,37 @@
 		};
 		2FF75E541D25CE7F009D99F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD33EF7F709D2BACB25B6028 /* Pods-fourfour.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = fourfour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.fourfour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
 		2FF75E551D25CE7F009D99F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9BAF52BCC3F0F3A88364A55 /* Pods-fourfour.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = fourfour/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.makeschool.fourfour;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 		2FF75E571D25CE7F009D99F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5A0A540EABF68C3B831254F /* Pods-fourfourTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = fourfourTests/Info.plist;
@@ -433,6 +642,7 @@
 		};
 		2FF75E581D25CE7F009D99F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D0A3D9DBEF9292C6EEA0194 /* Pods-fourfourTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = fourfourTests/Info.plist;
@@ -445,6 +655,7 @@
 		};
 		2FF75E5A1D25CE7F009D99F0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E240C26F266A78D5E30310B1 /* Pods-fourfourUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = fourfourUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -456,6 +667,7 @@
 		};
 		2FF75E5B1D25CE7F009D99F0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7604B1A711556AE0C39ED2E6 /* Pods-fourfourUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = fourfourUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -484,6 +696,7 @@
 				2FF75E551D25CE7F009D99F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FF75E561D25CE7F009D99F0 /* Build configuration list for PBXNativeTarget "fourfourTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +705,7 @@
 				2FF75E581D25CE7F009D99F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2FF75E591D25CE7F009D99F0 /* Build configuration list for PBXNativeTarget "fourfourUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +714,7 @@
 				2FF75E5B1D25CE7F009D99F0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

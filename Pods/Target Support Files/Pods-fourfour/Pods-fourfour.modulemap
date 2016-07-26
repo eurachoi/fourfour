@@ -1,0 +1,6 @@
+framework module Pods_fourfour {
+  umbrella header "Pods-fourfour-umbrella.h"
+
+  export *
+  module * { export * }
+}

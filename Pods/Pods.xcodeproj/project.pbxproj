@@ -1,0 +1,899 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0035E280E2227924AC4E2F8B3D44EF6B /* CSBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5013096A89CE092D9E04EDEBDA16951F /* CSBlurView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		008B4C12D115FA857C3B2569D85AAE5D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		050D31F1ACF003324524127CC92E1C6F /* UITextView+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 3DD24AD2C9573668CA8E4DDE3F3AD754 /* UITextView+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0854F4CBF3F17D6D20142E24243F6A3D /* Pods-fourfourTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 874B957B8AFCAD2AF613989A381DF8A7 /* Pods-fourfourTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		146EA652DBF62F28CFB6A3001693A9D8 /* UITextView+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CFF4490B3EE7BBC1AED94A8503D2575 /* UITextView+TCCustomFont.m */; };
+		2B3C98BF6B534DD54B2918F45B66A324 /* UITextField+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 19C5BD029D3552E153C6B4316F1AAC78 /* UITextField+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36B4D05DCC9A192BE334881285E89F8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		36ED0EF31C9D91CEE10D1C81E1EF66EB /* Pods-fourfourTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F15B0BC6930B37CF433EC37BC3A8CAF8 /* Pods-fourfourTests-dummy.m */; };
+		37437BE1DBC4C60EEF23B79D6C994BF8 /* CSAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 99959751C2612740ACCA1B3E11234850 /* CSAnimationView.m */; };
+		498D5B550786EE5E2C573C72DE94CECF /* Pods-fourfourUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DFA1444B234BA176B08C9CAA8C5FD593 /* Pods-fourfourUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E9E3DC1FB55174E59154BE979E63513 /* Pods-fourfour-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C26D6DDF3CA5395CF7CE5BF77642F37 /* Pods-fourfour-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F3DF3C44C278FE44AD44BA7C7FFE416 /* CSAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = E8A326087CFCD888C0213DBD68A49D0F /* CSAnimation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		51DB856BD58ADC66EAF464260C9BB683 /* CSNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1172A05D8D2438B15DA8426567768955 /* CSNavigationController.m */; };
+		6532D05ABC92B6291200495767FA3A1C /* Pods-fourfourUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B68624D2E947CB5A7DB031EF1AB4AB54 /* Pods-fourfourUITests-dummy.m */; };
+		662C71BB07B541650F00C223691E8902 /* UILabel+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 3142F4D39674D88D4451627EF922B97B /* UILabel+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		84531822075293E831349E663DB42F3F /* Pods-fourfour-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F2C91D0897B1E54D197D306843E17E43 /* Pods-fourfour-dummy.m */; };
+		A2EAB23D235F8B41E28A14ADD16542A9 /* CSNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AFE6BA08376482CFBD7DED11ED094D1 /* CSNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AE024FC0C6A794A8BC3B113BF63E836A /* UIButton+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C1849EE6BA43C2AD1A005BA493A979E /* UIButton+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B37A4CE3AE562C1B0715F69687E6644A /* CSBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 60CC9A45167423E712EAC4FEEFCAD2E6 /* CSBlurView.m */; };
+		C12996EA896ABDF39A40FC94315EA238 /* UILabel+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5C89AD2B6DD0D50AD54428B13AD794 /* UILabel+TCCustomFont.m */; };
+		C5703AD94DB5E55AF9A2D572CC81A08B /* Canvas-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB0C29A33F168953A9875EFB69288ED /* Canvas-dummy.m */; };
+		C9EA18F788CF76E49B34C3B12A42200D /* CSAnimationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 91EB2ADE1AE5C643F51DC3359E73DEAC /* CSAnimationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CB9EA82F545BB2D13A0B32FF3A9FFF1C /* CSAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FC89F1574C47348BE2F1527672F45D2 /* CSAnimation.m */; };
+		D48B2522EF3D35210840DFF235E29288 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DAD9483A8C579DE8A0561E2EC91736EB /* UINavigationBar+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 79ADA6F263E4BD552BC6999FB4F8C03D /* UINavigationBar+TCCustomFont.m */; };
+		DB678D6A80AE82C0E08F121230FADB12 /* UITextField+PlaceholderColor.h in Headers */ = {isa = PBXBuildFile; fileRef = A3EAEC1BA003A6B423F5FF357C83E1F2 /* UITextField+PlaceholderColor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD0DB59C5A2FC7EF534D4BFE1F45BFDC /* Canvas-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F119C7CA91B594631637EDC3C3B6505C /* Canvas-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF9556B6C0FBC1894056CA9E9DFFC0E5 /* UINavigationBar+TCCustomFont.h in Headers */ = {isa = PBXBuildFile; fileRef = 91AB0644D642FEB62CF83732D94B02D3 /* UINavigationBar+TCCustomFont.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E0280B7E837B585206DACE6B58CBA14A /* UIButton+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DCDE261C2ACF324C356FDEDE0B2D651 /* UIButton+TCCustomFont.m */; };
+		E064A372B02C1DB0F4DD763CAD500BA1 /* Canvas.h in Headers */ = {isa = PBXBuildFile; fileRef = 4E33E03C1E1AFCA6D52C90B62E39C5DA /* Canvas.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E74F025CD03B36742B0516E2A5D44A8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		F36FC5C3F71A1B956F4D4837202295AF /* UITextField+TCCustomFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB56C22590CF2F50B7523C39DE92968 /* UITextField+TCCustomFont.m */; };
+		FF638CC4A9134346D3A7831C880CF8CC /* UITextField+PlaceholderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 84535F434D576F73C7801B2AD73C4FAD /* UITextField+PlaceholderColor.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0575BC3A62E085F8946F35C52365C4E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80CBCC225074FD190F9BEA2940592423;
+			remoteInfo = Canvas;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		015093CBC5DEFEF5565A7F82AC94CD97 /* Pods-fourfourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fourfourTests.release.xcconfig"; sourceTree = "<group>"; };
+		03AD41BA8C7D9115FECDA2D7C418070F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09F3053B1F7C015571F490EB836790D0 /* Pods-fourfour-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fourfour-resources.sh"; sourceTree = "<group>"; };
+		0B6BE440792EF9337CC4AFD85177B677 /* Pods-fourfourUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fourfourUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0BB56C22590CF2F50B7523C39DE92968 /* UITextField+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+TCCustomFont.m"; path = "CanvasLibrary/UITextField+TCCustomFont.m"; sourceTree = "<group>"; };
+		0C57C1694F5C3B0ED77ACECC1D852D20 /* Pods_fourfourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1172A05D8D2438B15DA8426567768955 /* CSNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSNavigationController.m; path = CanvasLibrary/CSNavigationController.m; sourceTree = "<group>"; };
+		19C5BD029D3552E153C6B4316F1AAC78 /* UITextField+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+TCCustomFont.h"; path = "CanvasLibrary/UITextField+TCCustomFont.h"; sourceTree = "<group>"; };
+		2786DBB8C3F2BC3D03A85F7C354B72BC /* Pods-fourfourTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fourfourTests-resources.sh"; sourceTree = "<group>"; };
+		29B11BEEC33BE61E5B4A2CF523E5E8CD /* Pods-fourfour.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fourfour.release.xcconfig"; sourceTree = "<group>"; };
+		2C31E7D459FCE0C05CD9138DD2974CC7 /* Pods-fourfour-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fourfour-frameworks.sh"; sourceTree = "<group>"; };
+		2E4597D1954D9CE5679FC5A7FF1BEB3C /* Pods_fourfour.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfour.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3142F4D39674D88D4451627EF922B97B /* UILabel+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UILabel+TCCustomFont.h"; path = "CanvasLibrary/UILabel+TCCustomFont.h"; sourceTree = "<group>"; };
+		3DD24AD2C9573668CA8E4DDE3F3AD754 /* UITextView+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextView+TCCustomFont.h"; path = "CanvasLibrary/UITextView+TCCustomFont.h"; sourceTree = "<group>"; };
+		4953A9B994F7F97A383A1A5B48187CCA /* Pods-fourfourTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fourfourTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4CF5D5245EB19DA764AC6E144B5DECD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DCDE261C2ACF324C356FDEDE0B2D651 /* UIButton+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+TCCustomFont.m"; path = "CanvasLibrary/UIButton+TCCustomFont.m"; sourceTree = "<group>"; };
+		4E33E03C1E1AFCA6D52C90B62E39C5DA /* Canvas.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Canvas.h; path = CanvasLibrary/Canvas.h; sourceTree = "<group>"; };
+		5013096A89CE092D9E04EDEBDA16951F /* CSBlurView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSBlurView.h; path = CanvasLibrary/CSBlurView.h; sourceTree = "<group>"; };
+		5160DA7CDEBBC9847B8F2FEC6F429036 /* Pods-fourfour-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fourfour-acknowledgements.plist"; sourceTree = "<group>"; };
+		5CD3B635CC5FD41E07FC9C9725A5D680 /* Pods-fourfour.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-fourfour.modulemap"; sourceTree = "<group>"; };
+		60CC9A45167423E712EAC4FEEFCAD2E6 /* CSBlurView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSBlurView.m; path = CanvasLibrary/CSBlurView.m; sourceTree = "<group>"; };
+		6C1849EE6BA43C2AD1A005BA493A979E /* UIButton+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+TCCustomFont.h"; path = "CanvasLibrary/UIButton+TCCustomFont.h"; sourceTree = "<group>"; };
+		6EBE9AAAD12B3B80088F4CC60A7F4CF2 /* Pods-fourfourTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fourfourTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7229D3FE58B01844DC432F1B8E84890E /* Pods-fourfourUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fourfourUITests.release.xcconfig"; sourceTree = "<group>"; };
+		79ADA6F263E4BD552BC6999FB4F8C03D /* UINavigationBar+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+TCCustomFont.m"; path = "CanvasLibrary/UINavigationBar+TCCustomFont.m"; sourceTree = "<group>"; };
+		7FC89F1574C47348BE2F1527672F45D2 /* CSAnimation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSAnimation.m; path = CanvasLibrary/CSAnimation.m; sourceTree = "<group>"; };
+		83E8FDC28B02D68C3FB6F3E834103317 /* Pods-fourfourTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fourfourTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		84535F434D576F73C7801B2AD73C4FAD /* UITextField+PlaceholderColor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+PlaceholderColor.m"; path = "CanvasLibrary/UITextField+PlaceholderColor.m"; sourceTree = "<group>"; };
+		857960A75E9536A2C15C85C06131433E /* Canvas-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Canvas-prefix.pch"; sourceTree = "<group>"; };
+		874B957B8AFCAD2AF613989A381DF8A7 /* Pods-fourfourTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fourfourTests-umbrella.h"; sourceTree = "<group>"; };
+		8C1ECEB2699BD32EB4A873CD1D65CF76 /* Pods-fourfourUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fourfourUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8C26D6DDF3CA5395CF7CE5BF77642F37 /* Pods-fourfour-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fourfour-umbrella.h"; sourceTree = "<group>"; };
+		8D85901B60629D7F8E78EF37882024AD /* Canvas.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Canvas.xcconfig; sourceTree = "<group>"; };
+		8E5C89AD2B6DD0D50AD54428B13AD794 /* UILabel+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UILabel+TCCustomFont.m"; path = "CanvasLibrary/UILabel+TCCustomFont.m"; sourceTree = "<group>"; };
+		91AB0644D642FEB62CF83732D94B02D3 /* UINavigationBar+TCCustomFont.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+TCCustomFont.h"; path = "CanvasLibrary/UINavigationBar+TCCustomFont.h"; sourceTree = "<group>"; };
+		91EB2ADE1AE5C643F51DC3359E73DEAC /* CSAnimationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSAnimationView.h; path = CanvasLibrary/CSAnimationView.h; sourceTree = "<group>"; };
+		9270BFD189D2EBA0162F5C6A8D2BFF5C /* Pods-fourfourUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-fourfourUITests.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99959751C2612740ACCA1B3E11234850 /* CSAnimationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CSAnimationView.m; path = CanvasLibrary/CSAnimationView.m; sourceTree = "<group>"; };
+		9AAFC9709922FC7F2B9B1F665B33B16A /* Pods_fourfourUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfourUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFE6BA08376482CFBD7DED11ED094D1 /* CSNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSNavigationController.h; path = CanvasLibrary/CSNavigationController.h; sourceTree = "<group>"; };
+		9B940879DA2B3E56964319B797728EC7 /* Pods-fourfourTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fourfourTests-frameworks.sh"; sourceTree = "<group>"; };
+		9C1DB9A067FEC4C005985C70B8412270 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CFF4490B3EE7BBC1AED94A8503D2575 /* UITextView+TCCustomFont.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextView+TCCustomFont.m"; path = "CanvasLibrary/UITextView+TCCustomFont.m"; sourceTree = "<group>"; };
+		A10A7946EA737EE864800BDAFBEF2DE6 /* Canvas.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Canvas.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3EAEC1BA003A6B423F5FF357C83E1F2 /* UITextField+PlaceholderColor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+PlaceholderColor.h"; path = "CanvasLibrary/UITextField+PlaceholderColor.h"; sourceTree = "<group>"; };
+		B68624D2E947CB5A7DB031EF1AB4AB54 /* Pods-fourfourUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fourfourUITests-dummy.m"; sourceTree = "<group>"; };
+		C03D6FCB350BF6DEB94DD6639EF0A203 /* Pods-fourfourUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fourfourUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0784C44FAB37D91233C922D57DDE715 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4B68F889DCE30B213DCDA2A410349FC /* Pods-fourfour.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fourfour.debug.xcconfig"; sourceTree = "<group>"; };
+		CE470480740A0DEE3837EE4357F89C29 /* Pods-fourfourUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fourfourUITests-resources.sh"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		DC17A7F951E6D5441494C3D76688A01F /* Pods-fourfourTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-fourfourTests.modulemap"; sourceTree = "<group>"; };
+		DFA1444B234BA176B08C9CAA8C5FD593 /* Pods-fourfourUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fourfourUITests-umbrella.h"; sourceTree = "<group>"; };
+		E8A326087CFCD888C0213DBD68A49D0F /* CSAnimation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CSAnimation.h; path = CanvasLibrary/CSAnimation.h; sourceTree = "<group>"; };
+		F119C7CA91B594631637EDC3C3B6505C /* Canvas-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Canvas-umbrella.h"; sourceTree = "<group>"; };
+		F15B0BC6930B37CF433EC37BC3A8CAF8 /* Pods-fourfourTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fourfourTests-dummy.m"; sourceTree = "<group>"; };
+		F2C91D0897B1E54D197D306843E17E43 /* Pods-fourfour-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fourfour-dummy.m"; sourceTree = "<group>"; };
+		F39F2B0B550AEC49291CE2C784273FEF /* Pods-fourfourUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fourfourUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F5A0AC353CCD5AC7385C023A5155217A /* Pods-fourfour-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fourfour-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F87B018E7D473A0C8CFC365ECADDF1E4 /* Canvas.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Canvas.modulemap; sourceTree = "<group>"; };
+		FBB0C29A33F168953A9875EFB69288ED /* Canvas-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Canvas-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2AD5E5E42458AC3F94EC8F253CAD3BDE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E74F025CD03B36742B0516E2A5D44A8B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408AA983BB325D812F5E532989EA03D9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36B4D05DCC9A192BE334881285E89F8F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		910A477B8028CFF2267C8C9B8791CCB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D48B2522EF3D35210840DFF235E29288 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0867FE9B4FB0E496999DE58E26D7F5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				008B4C12D115FA857C3B2569D85AAE5D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1CA89213BFC09E3BA08DB998965F2724 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F87B018E7D473A0C8CFC365ECADDF1E4 /* Canvas.modulemap */,
+				8D85901B60629D7F8E78EF37882024AD /* Canvas.xcconfig */,
+				FBB0C29A33F168953A9875EFB69288ED /* Canvas-dummy.m */,
+				857960A75E9536A2C15C85C06131433E /* Canvas-prefix.pch */,
+				F119C7CA91B594631637EDC3C3B6505C /* Canvas-umbrella.h */,
+				03AD41BA8C7D9115FECDA2D7C418070F /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Canvas";
+			sourceTree = "<group>";
+		};
+		2BA09A5F36A5A26812E47C59ED498207 /* Pods-fourfourTests */ = {
+			isa = PBXGroup;
+			children = (
+				C0784C44FAB37D91233C922D57DDE715 /* Info.plist */,
+				DC17A7F951E6D5441494C3D76688A01F /* Pods-fourfourTests.modulemap */,
+				83E8FDC28B02D68C3FB6F3E834103317 /* Pods-fourfourTests-acknowledgements.markdown */,
+				6EBE9AAAD12B3B80088F4CC60A7F4CF2 /* Pods-fourfourTests-acknowledgements.plist */,
+				F15B0BC6930B37CF433EC37BC3A8CAF8 /* Pods-fourfourTests-dummy.m */,
+				9B940879DA2B3E56964319B797728EC7 /* Pods-fourfourTests-frameworks.sh */,
+				2786DBB8C3F2BC3D03A85F7C354B72BC /* Pods-fourfourTests-resources.sh */,
+				874B957B8AFCAD2AF613989A381DF8A7 /* Pods-fourfourTests-umbrella.h */,
+				4953A9B994F7F97A383A1A5B48187CCA /* Pods-fourfourTests.debug.xcconfig */,
+				015093CBC5DEFEF5565A7F82AC94CD97 /* Pods-fourfourTests.release.xcconfig */,
+			);
+			name = "Pods-fourfourTests";
+			path = "Target Support Files/Pods-fourfourTests";
+			sourceTree = "<group>";
+		};
+		3A8E0D382BBC443EDFEA463473977F4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A10A7946EA737EE864800BDAFBEF2DE6 /* Canvas.framework */,
+				2E4597D1954D9CE5679FC5A7FF1BEB3C /* Pods_fourfour.framework */,
+				0C57C1694F5C3B0ED77ACECC1D852D20 /* Pods_fourfourTests.framework */,
+				9AAFC9709922FC7F2B9B1F665B33B16A /* Pods_fourfourUITests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5FFC02980D77E8CC8CE49F6DD4D3140E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B0FC083F8D4DA0E234A6A2B273044624 /* Pods-fourfour */,
+				2BA09A5F36A5A26812E47C59ED498207 /* Pods-fourfourTests */,
+				FD9FBAE3CEFFE59068DE0227A4AEAAD9 /* Pods-fourfourUITests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				F1C78F9585DEF83568C1DDD945EBD0E5 /* Pods */,
+				3A8E0D382BBC443EDFEA463473977F4C /* Products */,
+				5FFC02980D77E8CC8CE49F6DD4D3140E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		B0FC083F8D4DA0E234A6A2B273044624 /* Pods-fourfour */ = {
+			isa = PBXGroup;
+			children = (
+				4CF5D5245EB19DA764AC6E144B5DECD5 /* Info.plist */,
+				5CD3B635CC5FD41E07FC9C9725A5D680 /* Pods-fourfour.modulemap */,
+				F5A0AC353CCD5AC7385C023A5155217A /* Pods-fourfour-acknowledgements.markdown */,
+				5160DA7CDEBBC9847B8F2FEC6F429036 /* Pods-fourfour-acknowledgements.plist */,
+				F2C91D0897B1E54D197D306843E17E43 /* Pods-fourfour-dummy.m */,
+				2C31E7D459FCE0C05CD9138DD2974CC7 /* Pods-fourfour-frameworks.sh */,
+				09F3053B1F7C015571F490EB836790D0 /* Pods-fourfour-resources.sh */,
+				8C26D6DDF3CA5395CF7CE5BF77642F37 /* Pods-fourfour-umbrella.h */,
+				C4B68F889DCE30B213DCDA2A410349FC /* Pods-fourfour.debug.xcconfig */,
+				29B11BEEC33BE61E5B4A2CF523E5E8CD /* Pods-fourfour.release.xcconfig */,
+			);
+			name = "Pods-fourfour";
+			path = "Target Support Files/Pods-fourfour";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1C78F9585DEF83568C1DDD945EBD0E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F285B768172B5ED6481021F0E86C5E7A /* Canvas */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F285B768172B5ED6481021F0E86C5E7A /* Canvas */ = {
+			isa = PBXGroup;
+			children = (
+				4E33E03C1E1AFCA6D52C90B62E39C5DA /* Canvas.h */,
+				E8A326087CFCD888C0213DBD68A49D0F /* CSAnimation.h */,
+				7FC89F1574C47348BE2F1527672F45D2 /* CSAnimation.m */,
+				91EB2ADE1AE5C643F51DC3359E73DEAC /* CSAnimationView.h */,
+				99959751C2612740ACCA1B3E11234850 /* CSAnimationView.m */,
+				5013096A89CE092D9E04EDEBDA16951F /* CSBlurView.h */,
+				60CC9A45167423E712EAC4FEEFCAD2E6 /* CSBlurView.m */,
+				9AFE6BA08376482CFBD7DED11ED094D1 /* CSNavigationController.h */,
+				1172A05D8D2438B15DA8426567768955 /* CSNavigationController.m */,
+				6C1849EE6BA43C2AD1A005BA493A979E /* UIButton+TCCustomFont.h */,
+				4DCDE261C2ACF324C356FDEDE0B2D651 /* UIButton+TCCustomFont.m */,
+				3142F4D39674D88D4451627EF922B97B /* UILabel+TCCustomFont.h */,
+				8E5C89AD2B6DD0D50AD54428B13AD794 /* UILabel+TCCustomFont.m */,
+				91AB0644D642FEB62CF83732D94B02D3 /* UINavigationBar+TCCustomFont.h */,
+				79ADA6F263E4BD552BC6999FB4F8C03D /* UINavigationBar+TCCustomFont.m */,
+				A3EAEC1BA003A6B423F5FF357C83E1F2 /* UITextField+PlaceholderColor.h */,
+				84535F434D576F73C7801B2AD73C4FAD /* UITextField+PlaceholderColor.m */,
+				19C5BD029D3552E153C6B4316F1AAC78 /* UITextField+TCCustomFont.h */,
+				0BB56C22590CF2F50B7523C39DE92968 /* UITextField+TCCustomFont.m */,
+				3DD24AD2C9573668CA8E4DDE3F3AD754 /* UITextView+TCCustomFont.h */,
+				9CFF4490B3EE7BBC1AED94A8503D2575 /* UITextView+TCCustomFont.m */,
+				1CA89213BFC09E3BA08DB998965F2724 /* Support Files */,
+			);
+			path = Canvas;
+			sourceTree = "<group>";
+		};
+		FD9FBAE3CEFFE59068DE0227A4AEAAD9 /* Pods-fourfourUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9C1DB9A067FEC4C005985C70B8412270 /* Info.plist */,
+				9270BFD189D2EBA0162F5C6A8D2BFF5C /* Pods-fourfourUITests.modulemap */,
+				0B6BE440792EF9337CC4AFD85177B677 /* Pods-fourfourUITests-acknowledgements.markdown */,
+				C03D6FCB350BF6DEB94DD6639EF0A203 /* Pods-fourfourUITests-acknowledgements.plist */,
+				B68624D2E947CB5A7DB031EF1AB4AB54 /* Pods-fourfourUITests-dummy.m */,
+				8C1ECEB2699BD32EB4A873CD1D65CF76 /* Pods-fourfourUITests-frameworks.sh */,
+				CE470480740A0DEE3837EE4357F89C29 /* Pods-fourfourUITests-resources.sh */,
+				DFA1444B234BA176B08C9CAA8C5FD593 /* Pods-fourfourUITests-umbrella.h */,
+				F39F2B0B550AEC49291CE2C784273FEF /* Pods-fourfourUITests.debug.xcconfig */,
+				7229D3FE58B01844DC432F1B8E84890E /* Pods-fourfourUITests.release.xcconfig */,
+			);
+			name = "Pods-fourfourUITests";
+			path = "Target Support Files/Pods-fourfourUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D2DEE5F2ACADAF8DC0B4772E36CC6C7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD0DB59C5A2FC7EF534D4BFE1F45BFDC /* Canvas-umbrella.h in Headers */,
+				E064A372B02C1DB0F4DD763CAD500BA1 /* Canvas.h in Headers */,
+				4F3DF3C44C278FE44AD44BA7C7FFE416 /* CSAnimation.h in Headers */,
+				C9EA18F788CF76E49B34C3B12A42200D /* CSAnimationView.h in Headers */,
+				0035E280E2227924AC4E2F8B3D44EF6B /* CSBlurView.h in Headers */,
+				A2EAB23D235F8B41E28A14ADD16542A9 /* CSNavigationController.h in Headers */,
+				AE024FC0C6A794A8BC3B113BF63E836A /* UIButton+TCCustomFont.h in Headers */,
+				662C71BB07B541650F00C223691E8902 /* UILabel+TCCustomFont.h in Headers */,
+				DF9556B6C0FBC1894056CA9E9DFFC0E5 /* UINavigationBar+TCCustomFont.h in Headers */,
+				DB678D6A80AE82C0E08F121230FADB12 /* UITextField+PlaceholderColor.h in Headers */,
+				2B3C98BF6B534DD54B2918F45B66A324 /* UITextField+TCCustomFont.h in Headers */,
+				050D31F1ACF003324524127CC92E1C6F /* UITextView+TCCustomFont.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		20A25326E37DC3FE0B513650B680661C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0854F4CBF3F17D6D20142E24243F6A3D /* Pods-fourfourTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F486A2210AF24D45DBAFC35B54C3E57 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				498D5B550786EE5E2C573C72DE94CECF /* Pods-fourfourUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		57170DB6A5DDFE2B2B3AF55A9B5F3731 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E9E3DC1FB55174E59154BE979E63513 /* Pods-fourfour-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		71FEB650A46AF2AEFD1AC9CE394992FA /* Pods-fourfourUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9FB1EC9D770E0B96293FB89CD90683E6 /* Build configuration list for PBXNativeTarget "Pods-fourfourUITests" */;
+			buildPhases = (
+				A25C11911BED707F7E9AA800887AB7E1 /* Sources */,
+				2AD5E5E42458AC3F94EC8F253CAD3BDE /* Frameworks */,
+				4F486A2210AF24D45DBAFC35B54C3E57 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-fourfourUITests";
+			productName = "Pods-fourfourUITests";
+			productReference = 9AAFC9709922FC7F2B9B1F665B33B16A /* Pods_fourfourUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		80CBCC225074FD190F9BEA2940592423 /* Canvas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3F734F76098089EF9030FCCACD5766C7 /* Build configuration list for PBXNativeTarget "Canvas" */;
+			buildPhases = (
+				0A33DC707B44F030F5360D55F0E5C04D /* Sources */,
+				910A477B8028CFF2267C8C9B8791CCB6 /* Frameworks */,
+				1D2DEE5F2ACADAF8DC0B4772E36CC6C7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Canvas;
+			productName = Canvas;
+			productReference = A10A7946EA737EE864800BDAFBEF2DE6 /* Canvas.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9CCF0652BF0E87DC23EAF3C4F50EC8B7 /* Pods-fourfour */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0547F52B8094BF2410E8FF77F3FFEAC6 /* Build configuration list for PBXNativeTarget "Pods-fourfour" */;
+			buildPhases = (
+				14C52F50A77A2C632F060F50C177CA03 /* Sources */,
+				408AA983BB325D812F5E532989EA03D9 /* Frameworks */,
+				57170DB6A5DDFE2B2B3AF55A9B5F3731 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3B074798995A2825BD89918641AB1F24 /* PBXTargetDependency */,
+			);
+			name = "Pods-fourfour";
+			productName = "Pods-fourfour";
+			productReference = 2E4597D1954D9CE5679FC5A7FF1BEB3C /* Pods_fourfour.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E918894F86ABD2F34DB2141783B90F74 /* Pods-fourfourTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3E4D70EFD62DFCDD957B1427E323007 /* Build configuration list for PBXNativeTarget "Pods-fourfourTests" */;
+			buildPhases = (
+				1AF92A3E18CD65E01D07C59CFD4E0DE9 /* Sources */,
+				C0867FE9B4FB0E496999DE58E26D7F5E /* Frameworks */,
+				20A25326E37DC3FE0B513650B680661C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-fourfourTests";
+			productName = "Pods-fourfourTests";
+			productReference = 0C57C1694F5C3B0ED77ACECC1D852D20 /* Pods_fourfourTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3A8E0D382BBC443EDFEA463473977F4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				80CBCC225074FD190F9BEA2940592423 /* Canvas */,
+				9CCF0652BF0E87DC23EAF3C4F50EC8B7 /* Pods-fourfour */,
+				E918894F86ABD2F34DB2141783B90F74 /* Pods-fourfourTests */,
+				71FEB650A46AF2AEFD1AC9CE394992FA /* Pods-fourfourUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A33DC707B44F030F5360D55F0E5C04D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5703AD94DB5E55AF9A2D572CC81A08B /* Canvas-dummy.m in Sources */,
+				CB9EA82F545BB2D13A0B32FF3A9FFF1C /* CSAnimation.m in Sources */,
+				37437BE1DBC4C60EEF23B79D6C994BF8 /* CSAnimationView.m in Sources */,
+				B37A4CE3AE562C1B0715F69687E6644A /* CSBlurView.m in Sources */,
+				51DB856BD58ADC66EAF464260C9BB683 /* CSNavigationController.m in Sources */,
+				E0280B7E837B585206DACE6B58CBA14A /* UIButton+TCCustomFont.m in Sources */,
+				C12996EA896ABDF39A40FC94315EA238 /* UILabel+TCCustomFont.m in Sources */,
+				DAD9483A8C579DE8A0561E2EC91736EB /* UINavigationBar+TCCustomFont.m in Sources */,
+				FF638CC4A9134346D3A7831C880CF8CC /* UITextField+PlaceholderColor.m in Sources */,
+				F36FC5C3F71A1B956F4D4837202295AF /* UITextField+TCCustomFont.m in Sources */,
+				146EA652DBF62F28CFB6A3001693A9D8 /* UITextView+TCCustomFont.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14C52F50A77A2C632F060F50C177CA03 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84531822075293E831349E663DB42F3F /* Pods-fourfour-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1AF92A3E18CD65E01D07C59CFD4E0DE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36ED0EF31C9D91CEE10D1C81E1EF66EB /* Pods-fourfourTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A25C11911BED707F7E9AA800887AB7E1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6532D05ABC92B6291200495767FA3A1C /* Pods-fourfourUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3B074798995A2825BD89918641AB1F24 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Canvas;
+			target = 80CBCC225074FD190F9BEA2940592423 /* Canvas */;
+			targetProxy = 0575BC3A62E085F8946F35C52365C4E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		034014829C1E4434983CF3A690C12017 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		0D186CF211A0C94083FA2E124CB0A469 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4953A9B994F7F97A383A1A5B48187CCA /* Pods-fourfourTests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-fourfourTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fourfourTests/Pods-fourfourTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_fourfourTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		11C0C7140C148658206745E69F1D5D13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D85901B60629D7F8E78EF37882024AD /* Canvas.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Canvas/Canvas-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Canvas/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Canvas/Canvas.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Canvas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		52CC29BA3265AC9D2C0C8FFC78668FE1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4B68F889DCE30B213DCDA2A410349FC /* Pods-fourfour.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-fourfour/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fourfour/Pods-fourfour.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_fourfour;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		57784A88F9E3BCC989EE486CCB72A6B1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29B11BEEC33BE61E5B4A2CF523E5E8CD /* Pods-fourfour.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-fourfour/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fourfour/Pods-fourfour.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_fourfour;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8469F8049D481F3D38E00A409F953CD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F39F2B0B550AEC49291CE2C784273FEF /* Pods-fourfourUITests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-fourfourUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fourfourUITests/Pods-fourfourUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_fourfourUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		BE07B89A511424DDEB980347B099DAAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D85901B60629D7F8E78EF37882024AD /* Canvas.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Canvas/Canvas-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Canvas/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Canvas/Canvas.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Canvas;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7E474A03CAE21F1CB6046E7344C59BD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE91803EC9F8F7D07D85AC6B5F6D2EA7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 015093CBC5DEFEF5565A7F82AC94CD97 /* Pods-fourfourTests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-fourfourTests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fourfourTests/Pods-fourfourTests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_fourfourTests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EA65DE87E2A878A2C0FCB2E6E70A8008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7229D3FE58B01844DC432F1B8E84890E /* Pods-fourfourUITests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-fourfourUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fourfourUITests/Pods-fourfourUITests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_fourfourUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0547F52B8094BF2410E8FF77F3FFEAC6 /* Build configuration list for PBXNativeTarget "Pods-fourfour" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52CC29BA3265AC9D2C0C8FFC78668FE1 /* Debug */,
+				57784A88F9E3BCC989EE486CCB72A6B1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				034014829C1E4434983CF3A690C12017 /* Debug */,
+				C7E474A03CAE21F1CB6046E7344C59BD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3F734F76098089EF9030FCCACD5766C7 /* Build configuration list for PBXNativeTarget "Canvas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE07B89A511424DDEB980347B099DAAD /* Debug */,
+				11C0C7140C148658206745E69F1D5D13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9FB1EC9D770E0B96293FB89CD90683E6 /* Build configuration list for PBXNativeTarget "Pods-fourfourUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8469F8049D481F3D38E00A409F953CD3 /* Debug */,
+				EA65DE87E2A878A2C0FCB2E6E70A8008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3E4D70EFD62DFCDD957B1427E323007 /* Build configuration list for PBXNativeTarget "Pods-fourfourTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D186CF211A0C94083FA2E124CB0A469 /* Debug */,
+				DE91803EC9F8F7D07D85AC6B5F6D2EA7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
