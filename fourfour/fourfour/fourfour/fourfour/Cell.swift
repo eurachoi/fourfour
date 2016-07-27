@@ -11,10 +11,7 @@ import UIKit
 class Cell: UICollectionViewCell{
     @IBOutlet weak var circleImage: UIImageView!
     
-    var cellState: State = .Blank
-    enum State{
-        case Blank, Solid, Black, White
-    }
+    var cellState: CellState = .Blank
     
     func fillCell(cell: Cell, cellIsBlack: Bool){
         if(cellIsBlack){

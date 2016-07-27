@@ -8,6 +8,10 @@
 
 import UIKit
 
+enum CellState{
+    case Blank, Solid, Black, White
+}
+
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
     @IBOutlet weak var bottomOutletForGradient: UIButton!
@@ -17,7 +21,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var boardView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
+    
+    var gameHasBeenWon = false
+    
     @IBAction func newGame(sender: AnyObject) {
+        boardView.userInteractionEnabled = true
+        gameHasBeenWon = false
         isBlackPlayersTurn = true
         infoLabel.text="player one's turn"
         for count in 0...99{
@@ -83,13 +92,78 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
-    func winRecognition() -> Int{
-        
-        print("hi")
-        
-        return 0
+    func winRecognition(){
+        var winningColor: CellState = .Blank
+        for cellIndex in 0...99{
+            if(workingBoard[cellIndex].cellState == .Blank||workingBoard[cellIndex].cellState == .Solid){
+                continue
+            }
+            else{
+                for directionNumber in 0...7{
+                    winningColor = workingBoard[cellIndex].cellState
+                    winRecognitionRecursion(cellIndex, direction: directionNumber, checkingCellState: workingBoard[cellIndex].cellState, count: 1)
+                }
+            }
+            if(gameHasBeenWon == true){
+                if(winningColor == .Black){
+                    infoLabel.text = "player one has won!"
+                }
+                if(winningColor == .White){
+                    infoLabel.text = "player two has won!"
+                }
+                boardView.userInteractionEnabled = false
+                break
+            }
+        }
     }
     
+    
+    func winRecognitionRecursion(index: Int, direction: Int, checkingCellState: CellState, count: Int){
+// 0 1 2
+// 3 . 4
+// 5 6 7
+        var traverseInteger = 0
+        switch direction {
+        case 0:
+            traverseInteger = -11
+        case 1:
+            traverseInteger = -10
+        case 2:
+            traverseInteger = -9
+        case 3:
+            traverseInteger = -1
+        case 4:
+            traverseInteger = 1
+        case 5:
+            traverseInteger = 9
+        case 6:
+            traverseInteger = 10
+        case 7:
+            traverseInteger = 11
+        default:
+            traverseInteger = 0
+        }
+        let nextIndex = index + traverseInteger
+        let newCount = count+1
+        
+        if(nextIndex<0||nextIndex>99){
+            return
+        }
+        
+        if(workingBoard[nextIndex].cellState != checkingCellState){
+            return
+        }
+        if(workingBoard[nextIndex].cellState == checkingCellState){
+            if(count==3){
+                gameHasBeenWon = true
+                return
+            }
+            if(((nextIndex%10 == 9&&direction == 4)||(nextIndex%10 == 0&&direction == 3)||(nextIndex<9&&direction == 1)||(nextIndex>89&&direction == 6))&&count<3){
+                return
+            }
+            winRecognitionRecursion(nextIndex, direction: direction, checkingCellState: checkingCellState, count: newCount)
+        }
+    }
     
     
     
@@ -245,10 +319,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                         cell.fillCell(cell, cellIsBlack: false)
                     }
                     animatedView.removeFromSuperview()
+                    self.winRecognition()
             })
             
-            
-            winRecognition()
         }
     }
     
