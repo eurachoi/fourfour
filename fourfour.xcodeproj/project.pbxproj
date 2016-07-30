@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F17E7821D4BDA9400AB05AF /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17E7811D4BDA9400AB05AF /* HelpViewController.swift */; };
 		2FF75E2F1D25CE7F009D99F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF75E2E1D25CE7F009D99F0 /* AppDelegate.swift */; };
 		2FF75E311D25CE7F009D99F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF75E301D25CE7F009D99F0 /* ViewController.swift */; };
 		2FF75E341D25CE7F009D99F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF75E321D25CE7F009D99F0 /* Main.storyboard */; };
@@ -42,9 +43,10 @@
 /* Begin PBXFileReference section */
 		0D0A3D9DBEF9292C6EEA0194 /* Pods-fourfourTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fourfourTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-fourfourTests/Pods-fourfourTests.release.xcconfig"; sourceTree = "<group>"; };
 		1D7FCB879E276164A6A25B33 /* Pods_fourfourTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fourfourTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F17E7811D4BDA9400AB05AF /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
 		2FF75E2B1D25CE7F009D99F0 /* fourfour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fourfour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF75E2E1D25CE7F009D99F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FF75E301D25CE7F009D99F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FF75E301D25CE7F009D99F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; usesTabs = 1; };
 		2FF75E331D25CE7F009D99F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FF75E351D25CE7F009D99F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF75E381D25CE7F009D99F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -128,6 +130,7 @@
 				2FF75E371D25CE7F009D99F0 /* LaunchScreen.storyboard */,
 				2FF75E3A1D25CE7F009D99F0 /* Info.plist */,
 				2FF75E661D26D501009D99F0 /* Cell.swift */,
+				2F17E7811D4BDA9400AB05AF /* HelpViewController.swift */,
 			);
 			path = fourfour;
 			sourceTree = "<group>";
@@ -458,6 +461,7 @@
 				2FF75E311D25CE7F009D99F0 /* ViewController.swift in Sources */,
 				2FF75E671D26D501009D99F0 /* Cell.swift in Sources */,
 				2FF75E2F1D25CE7F009D99F0 /* AppDelegate.swift in Sources */,
+				2F17E7821D4BDA9400AB05AF /* HelpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

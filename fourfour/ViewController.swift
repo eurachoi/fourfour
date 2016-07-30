@@ -13,18 +13,33 @@ enum CellState{
 }
 
 class ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
+    @IBOutlet weak var infoLabelHeight: NSLayoutConstraint!
+    @IBOutlet weak var tutorialLabelHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tutorialLabelTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var tutorialLabel: UILabel!
     @IBOutlet weak var bottomOutletForGradient: UIButton!
     var workingBoard = [Cell]()
-    
+    var tutorialCellsAreFlashing = false
     @IBOutlet var overallView: UIView!
     @IBOutlet weak var boardView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
-    
     var gameHasBeenWon = false
     
+    @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
+        if segue.identifier == "playTutorialButton" {
+            NSUserDefaults.standardUserDefaults().setBool(false, forKey: "launchedBefore")
+        }
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+    }
+    
     @IBAction func newGame(sender: AnyObject) {
+        newGameClear()
+    }
+    func newGameClear(){
         boardView.userInteractionEnabled = true
         gameHasBeenWon = false
         isBlackPlayersTurn = true
@@ -45,25 +60,84 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     
+    func firstTimeTutorial(){
+        newGameClear()
+        let size:CGRect=UIScreen.mainScreen().bounds
+        let desiredCellWidth=(size.width-29)/10
+        tutorialLabel.clipsToBounds = true
+        tutorialLabelTopConstraint.constant = 45 + (desiredCellWidth*1.5)
+        tutorialLabelHeightConstraint.constant = desiredCellWidth
+        
+        tutorialLabel.text = " select any to begin "
+        var layerForLabel: CALayer {
+            return tutorialLabel.layer
+        }
+        //space between title and boardview is 45px
+        layerForLabel.cornerRadius = self.tutorialLabel.frame.size.width * 0.05
+        
+        tutorialLabel.hidden = false
+        
+        tutorialCellsAreFlashing = true
+        var highlightedCells = [NSIndexPath]()
+        highlightedCells.append(NSIndexPath(forRow: 34, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 35, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 43, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 46, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 53, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 56, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 64, inSection: 0))
+        highlightedCells.append(NSIndexPath(forRow: 65, inSection: 0))
+        UIView.animateWithDuration(0.6, delay: 0.0, options:[UIViewAnimationOptions.Repeat, UIViewAnimationOptions.Autoreverse, UIViewAnimationOptions.AllowUserInteraction], animations: {
+            for highlightCellAtIndex in highlightedCells{
+                self.boardView.cellForItemAtIndexPath(highlightCellAtIndex)?.backgroundColor = UIColor(red:0.91, green:1.00, blue:0.87, alpha:1.0)
+                self.boardView.cellForItemAtIndexPath(highlightCellAtIndex)?.backgroundColor = UIColor(red:0.65, green:0.99, blue:0.64, alpha:1.0)
+                
+            }
+        }, completion: nil)
+        
+        
+    }
+    
     
     override func viewWillAppear(animated: Bool) {
-        let gradient: CAGradientLayer = CAGradientLayer()
+        super.viewWillAppear(animated)
         
-       // var temporary = CGRect()
         
-        gradient.frame = overallView.bounds
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
         
-        let printhtis = bottomOutletForGradient.frame.maxY / overallView.bounds.height
-        gradient.endPoint.y = printhtis
-        gradient.colors = [UIColor.whiteColor().CGColor, UIColor(red:0.65, green:0.99, blue:0.64, alpha:1.0).CGColor]
-        view.layer.insertSublayer(gradient, atIndex: 0)
+        displayFirstTimeTutorialIfNeeded()
+    }
+    
+    func displayFirstTimeTutorialIfNeeded() {
+        let launchedBefore = NSUserDefaults.standardUserDefaults().boolForKey("launchedBefore")
+        if !launchedBefore  {
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "launchedBefore")
+            firstTimeTutorial()
+        }
     }
 
     var isBlackPlayersTurn=true
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loading the view, typically from a nib
         
+
+
+        
+        let gradient: CAGradientLayer = CAGradientLayer()
+        gradient.frame = overallView.bounds
+        let printhtis = bottomOutletForGradient.frame.maxY / (overallView.bounds.height)
+        gradient.endPoint.y = printhtis
+        gradient.colors = [UIColor.whiteColor().CGColor, UIColor(red:0.65, green:0.99, blue:0.64, alpha:1.0).CGColor]
+        view.layer.insertSublayer(gradient, atIndex: 0)
+        titleLabel.adjustsFontSizeToFitWidth = true
+        if(overallView.bounds.size == CGSizeMake(320, 480)){
+            infoLabelHeight.constant = 40
+            titleLabel.font = titleLabel.font.fontWithSize(titleLabel.frame.height * 0.55)
+        }
     }
 
     override func didReceiveMemoryWarning() {
@@ -257,6 +331,27 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             if(cell.cellState != .Blank){
                 return
             }
+            
+            if(tutorialCellsAreFlashing == true){
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 34, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 35, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 43, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 46, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 53, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 56, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 64, inSection: 0))!.layer.removeAllAnimations()
+                boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 65, inSection: 0))!.layer.removeAllAnimations()
+                tutorialCellsAreFlashing = false
+                tutorialLabel.text = " pieces must stack on each other "
+            }
+            else if(tutorialLabel.text == " pieces must stack on each other "){
+                tutorialLabel.text = " connect four to win! "
+            }
+            else if(tutorialLabel.text == " connect four to win! "){
+                tutorialLabel.hidden = true
+            }
+            
+            
             let animatedView = UIImageView()
             animatedView.frame = CGRectMake(0, 0, desiredCellWidth - 4, desiredCellWidth - 4)
             animatedView.contentMode = .ScaleAspectFit
