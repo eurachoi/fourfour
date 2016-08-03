@@ -20,11 +20,15 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     @IBOutlet weak var bottomOutletForGradient: UIButton!
     var workingBoard = [Cell]()
     var tutorialCellsAreFlashing = false
+	var AIPlay = false
+	var AIClass = AI()
     @IBOutlet var overallView: UIView!
     @IBOutlet weak var boardView: UICollectionView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var infoLabel: UILabel!
+	var actionInProgress = false
     var gameHasBeenWon = false
+	var AIPlayHasBeenNewlySwitched = false
     
     @IBAction func unwindToViewController(segue: UIStoryboardSegue) {
         if segue.identifier == "playTutorialButton" {
@@ -33,9 +37,13 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        
+		
+		let destination = segue.destinationViewController as! HelpViewController
+		destination.on = self.AIPlay
+		destination.switchWasRecentlyFlipped = AIPlayHasBeenNewlySwitched
+		
     }
-    
+	
     @IBAction func newGame(sender: AnyObject) {
         newGameClear()
     }
@@ -50,15 +58,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             {
                 continue
             }
-            let cell = boardView.cellForItemAtIndexPath(reloadCellIndex) as! Cell
-            if(cell.cellState != .Blank){
-                cell.cellState = .Blank
+            let cellInCollectionView = boardView.cellForItemAtIndexPath(reloadCellIndex) as! Cell
+            if(workingBoard[count].cellState != .Blank){
                 workingBoard[count].cellState = .Blank
-                cell.circleImage.image = UIImage(named: "transparent")
+                cellInCollectionView.circleImage.image = UIImage(named: "transparent")
             }
         }
     }
-    
+	
+	func configureAIVariable(turnOn: Bool){
+		if(turnOn){
+			AIPlay = true
+			AIPlayHasBeenNewlySwitched = true
+		}
+		else{
+			AIPlay = false
+			AIPlayHasBeenNewlySwitched = true
+		}
+	}
     
     func firstTimeTutorial(){
         newGameClear()
@@ -107,7 +124,10 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        
+		if(AIPlayHasBeenNewlySwitched){
+			newGameClear()
+			AIPlayHasBeenNewlySwitched = false
+		}
         displayFirstTimeTutorialIfNeeded()
     }
     
@@ -244,27 +264,29 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     
     func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath)
     {
-        let cell=collectionView.cellForItemAtIndexPath(indexPath) as! Cell
+		let cell=workingBoard[indexPath.row]
+		if(cell.cellState != .Blank){
+			return
+		}
         let workingBoardIndex = indexPath.row
+        var surroundingCells: [Cell] = [cell, cell, cell, cell]
         
-        var surroundingCells: [Cell] = [collectionView.cellForItemAtIndexPath(indexPath) as! Cell, collectionView.cellForItemAtIndexPath(indexPath) as! Cell, collectionView.cellForItemAtIndexPath(indexPath) as! Cell, collectionView.cellForItemAtIndexPath(indexPath) as! Cell]
-        
-        let leftCellIndex = indexPath.row-1
-        let rightCellIndex = indexPath.row+1
-        let topCellIndex = indexPath.row-10
-        let bottomCellIndex = indexPath.row+10
+        let leftCellIndex = workingBoardIndex-1
+        let rightCellIndex = workingBoardIndex+1
+        let topCellIndex = workingBoardIndex-10
+        let bottomCellIndex = workingBoardIndex+10
         
         if(leftCellIndex>=0&&leftCellIndex%10 != 9){
-            surroundingCells[0] = collectionView.cellForItemAtIndexPath(NSIndexPath(forRow: leftCellIndex, inSection: 0)) as! Cell
+            surroundingCells[0] = workingBoard[leftCellIndex]
         }
         if(rightCellIndex<=99&&rightCellIndex%10 != 0){
-            surroundingCells[1] = collectionView.cellForItemAtIndexPath(NSIndexPath(forRow: rightCellIndex, inSection: 0)) as! Cell
+            surroundingCells[1] = workingBoard[rightCellIndex]
         }
         if(topCellIndex>=0){
-            surroundingCells[2] = collectionView.cellForItemAtIndexPath(NSIndexPath(forRow: topCellIndex, inSection: 0)) as! Cell
+            surroundingCells[2] = workingBoard[topCellIndex]
         }
         if(bottomCellIndex<=99){
-            surroundingCells[3] = collectionView.cellForItemAtIndexPath(NSIndexPath(forRow: bottomCellIndex, inSection: 0)) as! Cell
+            surroundingCells[3] = workingBoard[bottomCellIndex]
         }
         
         
@@ -291,9 +313,9 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 }
                 var breakWhileLoop = false
                 var returnBoolValue = false
-                var indexPathCopy = indexPath
+                var indexPathCopy = indexPath.row
                 while(breakWhileLoop == false){
-                    let nextCellIndex = indexPathCopy.row+traverseFactor
+                    let nextCellIndex = indexPathCopy+traverseFactor
                     if(nextCellIndex<0||nextCellIndex>99){
                         returnBoolValue = true
                         break
@@ -302,9 +324,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                         returnBoolValue = true
                         
                     }
-                    let indexOfNextCell = NSIndexPath(forRow: nextCellIndex, inSection: 0)
-                    indexPathCopy = indexOfNextCell
-                    let nextCell = collectionView.cellForItemAtIndexPath(indexOfNextCell) as! Cell
+                    indexPathCopy = nextCellIndex
+                    let nextCell = workingBoard[nextCellIndex]
                     if(nextCell.cellState != .Blank){
                         
                         returnBoolValue = false
@@ -328,10 +349,7 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         
         
         if(canBeSelected){
-            if(cell.cellState != .Blank){
-                return
-            }
-            
+			cell.cellState = .Solid
             if(tutorialCellsAreFlashing == true){
                 boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 34, inSection: 0))!.layer.removeAllAnimations()
                 boardView.cellForItemAtIndexPath(NSIndexPath(forRow: 35, inSection: 0))!.layer.removeAllAnimations()
@@ -366,20 +384,20 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 }
                 count += 1
             }
-            
+            let cellInCollectionView = boardView.cellForItemAtIndexPath(indexPath) as! Cell
             let chosenIndexOfIndexesOfAvailable = Int(arc4random_uniform(UInt32(indexesOfAvailable.count)))
             switch indexesOfAvailable[chosenIndexOfIndexesOfAvailable] {
             case 0:
                 animatedView.frame.origin.x = size.width + desiredCellWidth - 2
-                animatedView.frame.origin.y = cell.frame.origin.y + 2
+                animatedView.frame.origin.y = cellInCollectionView.frame.origin.y + 2
             case 1:
                 animatedView.frame.origin.x = 0 - desiredCellWidth + 2
-                animatedView.frame.origin.y = cell.frame.origin.y + 2
+                animatedView.frame.origin.y = cellInCollectionView.frame.origin.y + 2
             case 2:
-                animatedView.frame.origin.x = cell.frame.origin.x + 2
+                animatedView.frame.origin.x = cellInCollectionView.frame.origin.x + 2
                 animatedView.frame.origin.y = size.height
             case 3:
-                animatedView.frame.origin.x = cell.frame.origin.x + 2
+                animatedView.frame.origin.x = cellInCollectionView.frame.origin.x + 2
                 animatedView.frame.origin.y = 0 - desiredCellWidth + 2
             default:
                 break
@@ -390,7 +408,12 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 animatedView.image = UIImage(named: "black")
                 workingBoard[workingBoardIndex].cellState = .Black
                 isBlackPlayersTurn=false
+				if(AIPlay){
+					infoLabel.text = "computer's turn"
+					AIClass.beginAIMove(workingBoard)
+				}
                 infoLabel.text="player two's turn"
+				
             }
             else{
                 animatedView.image = UIImage(named: "white")
@@ -400,18 +423,17 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             }
             
             self.boardView.addSubview(animatedView)
-            
             UIView.animateWithDuration(0.4, animations: {
-                let destinationXCoordinate = cell.frame.origin.x + 2
-                let destinationYCoordinate = cell.frame.origin.y + 2
+                let destinationXCoordinate = cellInCollectionView.frame.origin.x + 2
+                let destinationYCoordinate = cellInCollectionView.frame.origin.y + 2
                 animatedView.frame.origin.x = destinationXCoordinate
                 animatedView.frame.origin.y = destinationYCoordinate
                 }, completion: { finished in
                     if(self.isBlackPlayersTurn == false){
-                        cell.fillCell(cell, cellIsBlack: true)
+                        cellInCollectionView.fillCell(cell, cellIsBlack: true)
                     }
                     if(self.isBlackPlayersTurn == true){
-                        cell.fillCell(cell, cellIsBlack: false)
+                        cellInCollectionView.fillCell(cell, cellIsBlack: false)
                     }
                     animatedView.removeFromSuperview()
                     self.winRecognition()

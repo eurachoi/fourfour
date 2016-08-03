@@ -19,8 +19,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ycl-Kb-hBq">
-                                <rect key="frame" x="10" y="173" width="580" height="366"/>
+                            <collectionView clipsSubviews="YES" contentMode="scaleToFill" scrollEnabled="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Ycl-Kb-hBq">
+                                <rect key="frame" x="10" y="199" width="337" height="337"/>
                                 <color key="backgroundColor" red="0.1468372942" green="0.1468372942" blue="0.1468372942" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Ycl-Kb-hBq" secondAttribute="height" multiplier="1:1" id="BDQ-Wn-AiX"/>
@@ -63,8 +63,8 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="KD4-bE-b91"/>
                                 </connections>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" misplaced="YES" text="player one's turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Opc-gc-TnW">
-                                <rect key="frame" x="10" y="551" width="580" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="player one's turn" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="Opc-gc-TnW">
+                                <rect key="frame" x="10" y="546" width="580" height="44"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="GlC-dP-dPe"/>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="70" id="bU4-Q0-ZBb"/>
@@ -78,8 +78,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" misplaced="YES" layoutMarginsFollowReadableWidth="YES" text="fourfour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0k-6Y-kGC">
-                                <rect key="frame" x="10" y="25" width="580" height="100"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" layoutMarginsFollowReadableWidth="YES" text="fourfour" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W0k-6Y-kGC">
+                                <rect key="frame" x="10" y="25" width="580" height="129"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
                                 </accessibility>
@@ -95,8 +95,8 @@
                                     </mask>
                                 </variation>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOD-xW-LFd">
-                                <rect key="frame" x="488" y="130" width="102" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOD-xW-LFd">
+                                <rect key="frame" x="532" y="159" width="58" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="aIH-fx-pBl"/>
                                 </constraints>
@@ -109,8 +109,8 @@
                                     <segue destination="Yht-dz-JkS" kind="show" identifier="showHelp" id="yOD-e8-ST5"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-E4-jaB">
-                                <rect key="frame" x="10" y="130" width="126" height="30"/>
+                            <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-E4-jaB">
+                                <rect key="frame" x="10" y="159" width="122" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="nhN-Ql-mO8"/>
                                 </constraints>
@@ -123,8 +123,8 @@
                                     <action selector="newGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wvN-ov-Dav"/>
                                 </connections>
                             </button>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HuB-FP-Zbj">
-                                <rect key="frame" x="375" y="149" width="69" height="30"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HuB-FP-Zbj">
+                                <rect key="frame" x="271" y="178" width="59" height="30"/>
                                 <color key="backgroundColor" red="0.65098039220000004" green="0.98823529409999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="rzd-Xa-7i2"/>
@@ -184,19 +184,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="256" verticalHuggingPriority="262" misplaced="YES" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAQ-KF-UmJ">
-                                <rect key="frame" x="15" y="50" width="570" height="10"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="256" verticalHuggingPriority="262" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAQ-KF-UmJ">
+                                <rect key="frame" x="15" y="74" width="570" height="411"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                                <mutableString key="text">fourfour is like Connect Four—but from all four sides, hence the name "fourfour". Like Connect Four, pieces can't float in mid air and must build on each other. Think of the fourfour board as a flat table that you're flicking pieces across. The pieces only stop if there's a barrier, such as other pieces or the center structure, or else they'll just fly off the table.   Currently the game only has one mode, pass-and-play mode, but eventually you will be able to play with random players online.</mutableString>
+                                <string key="text">fourfour is like Connect Four—but from all four sides, hence the name "fourfour". Like Connect Four, pieces can't float in mid air and must build on each other. Think of the fourfour board as a flat table that you're flicking pieces across. The pieces only stop if there's a barrier, such as other pieces or the center structure, or else they'll just fly off the table.   Currently the game only has one mode, pass-and-play mode, but eventually you will be able to play with random players online.</string>
                                 <color key="textColor" red="0.1468372942" green="0.1468372942" blue="0.1468372942" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2S-yW-uzq">
-                                <rect key="frame" x="0.0" y="80" width="600" height="40"/>
-                                <color key="backgroundColor" red="0.55291137200292428" green="0.96468349358974359" blue="0.53861795512267818" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2S-yW-uzq">
+                                <rect key="frame" x="0.0" y="550" width="600" height="40"/>
+                                <color key="backgroundColor" red="0.55294117647058827" green="0.96470588235294119" blue="0.53725490196078429" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="playTutorialButton"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
                                 <inset key="contentEdgeInsets" minX="4" minY="4" maxX="4" maxY="4"/>
@@ -207,8 +207,8 @@
                                     <segue destination="BG9-ET-vGy" kind="unwind" identifier="playTutorialButton" unwindAction="unwindToViewController:" id="1wt-c9-Gad"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-B2-jZi">
-                                <rect key="frame" x="109" y="12" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZHd-B2-jZi">
+                                <rect key="frame" x="20" y="30" width="68" height="40"/>
                                 <accessibility key="accessibilityConfiguration" identifier="backButton"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <state key="normal" title="← back">
@@ -218,11 +218,36 @@
                                     <segue destination="BG9-ET-vGy" kind="unwind" identifier="backButton" unwindAction="unwindToViewController:" id="9HM-a3-poM"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RJF-jg-0Nf">
+                                <rect key="frame" x="0.0" y="505" width="600" height="40"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="play against computer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BAx-nC-5lo">
+                                        <rect key="frame" x="20" y="10" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
+                                        <color key="textColor" red="0.16671524609999999" green="0.4067755468" blue="0.1235597873" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="hbi-M7-Q7t">
+                                        <rect key="frame" x="531" y="4" width="51" height="31"/>
+                                        <color key="onTintColor" red="0.16671524609999999" green="0.4067755468" blue="0.1235597873" alpha="1" colorSpace="calibratedRGB"/>
+                                    </switch>
+                                </subviews>
+                                <color key="backgroundColor" red="0.55294117649999996" green="0.96470588239999999" blue="0.53725490200000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="BAx-nC-5lo" firstAttribute="leading" secondItem="RJF-jg-0Nf" secondAttribute="leading" constant="20" id="ENP-Bw-MXl"/>
+                                    <constraint firstItem="hbi-M7-Q7t" firstAttribute="centerY" secondItem="RJF-jg-0Nf" secondAttribute="centerY" id="KQA-Cw-o07"/>
+                                    <constraint firstAttribute="trailing" secondItem="hbi-M7-Q7t" secondAttribute="trailing" constant="20" id="VD7-3L-GfF"/>
+                                    <constraint firstAttribute="height" constant="40" id="iD5-ud-SnG"/>
+                                    <constraint firstItem="BAx-nC-5lo" firstAttribute="centerY" secondItem="RJF-jg-0Nf" secondAttribute="centerY" id="lu9-3u-yGq"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.65098039220000004" green="0.98823529409999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="x2S-yW-uzq" firstAttribute="top" secondItem="pAQ-KF-UmJ" secondAttribute="bottom" constant="20" id="1Oz-wF-Tzz"/>
+                            <constraint firstItem="x2S-yW-uzq" firstAttribute="top" secondItem="RJF-jg-0Nf" secondAttribute="bottom" constant="5" id="1Ri-Wy-Xsa"/>
                             <constraint firstAttribute="bottomMargin" secondItem="x2S-yW-uzq" secondAttribute="bottom" constant="10" id="59D-HM-GCP"/>
+                            <constraint firstItem="RJF-jg-0Nf" firstAttribute="top" secondItem="pAQ-KF-UmJ" secondAttribute="bottom" constant="20" id="70C-u4-1Zp"/>
                             <constraint firstItem="pAQ-KF-UmJ" firstAttribute="top" secondItem="ZHd-B2-jZi" secondAttribute="bottom" constant="4" id="9em-v3-RNh"/>
                             <constraint firstItem="ZHd-B2-jZi" firstAttribute="leading" secondItem="B9f-GC-gWm" secondAttribute="leading" constant="20" id="DzW-2p-HNZ"/>
                             <constraint firstItem="ZHd-B2-jZi" firstAttribute="top" secondItem="B9f-GC-gWm" secondAttribute="top" constant="30" id="GEr-b1-x9I"/>
@@ -232,16 +257,22 @@
                             <constraint firstItem="pAQ-KF-UmJ" firstAttribute="top" secondItem="ut2-1C-Beg" secondAttribute="bottom" constant="30" id="bXA-hR-0a1"/>
                             <constraint firstAttribute="trailing" secondItem="x2S-yW-uzq" secondAttribute="trailing" id="ece-QM-Jfj"/>
                             <constraint firstItem="x2S-yW-uzq" firstAttribute="leading" secondItem="B9f-GC-gWm" secondAttribute="leading" id="ik4-qP-Nrs"/>
+                            <constraint firstItem="RJF-jg-0Nf" firstAttribute="leading" secondItem="B9f-GC-gWm" secondAttribute="leading" id="tgV-2f-vPy"/>
+                            <constraint firstAttribute="trailing" secondItem="RJF-jg-0Nf" secondAttribute="trailing" id="vH1-80-DBH"/>
                             <constraint firstAttribute="trailing" secondItem="pAQ-KF-UmJ" secondAttribute="trailing" constant="15" id="znb-td-6Kq"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
                                 <exclude reference="bXA-hR-0a1"/>
+                                <exclude reference="1Oz-wF-Tzz"/>
                                 <exclude reference="JN3-K3-qug"/>
                                 <exclude reference="PaS-C3-MJg"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="AISwitch" destination="hbi-M7-Q7t" id="uAB-a6-O1q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bxW-Sw-M4a" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="BG9-ET-vGy" userLabel="Exit" sceneMemberID="exit"/>

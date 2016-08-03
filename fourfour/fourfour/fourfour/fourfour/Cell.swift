@@ -16,11 +16,9 @@ class Cell: UICollectionViewCell{
     func fillCell(cell: Cell, cellIsBlack: Bool){
         if(cellIsBlack){
             circleImage.image=UIImage(named: "black")
-            cell.cellState = .Black
         }
         else{
             circleImage.image=UIImage(named: "white")
-            cell.cellState = .White
         }
     }
 }
