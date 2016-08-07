@@ -189,7 +189,7 @@
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" notEnabled="YES"/>
                                 </accessibility>
-                                <string key="text">fourfour is like Connect Four—but from all four sides, hence the name "fourfour". Like Connect Four, pieces can't float in mid air and must build on each other. Think of the fourfour board as a flat table that you're flicking pieces across. The pieces only stop if there's a barrier, such as other pieces or the center structure, or else they'll just fly off the table.   Currently the game only has one mode, pass-and-play mode, but eventually you will be able to play with random players online.</string>
+                                <mutableString key="text">fourfour is like Connect Four—but from all four sides, hence the name "fourfour". Like Connect Four, pieces can't float in mid air and must build on each other. Think of the fourfour board as a flat table that you're flicking pieces across. The pieces only stop if there's a barrier, such as other pieces or the center structure, or else they'll just fly off the table.   Currently the game only has two modes, pass-and-play mode and playing against an intermediate AI, but other AI difficulties will soon be added.</mutableString>
                                 <color key="textColor" red="0.1468372942" green="0.1468372942" blue="0.1468372942" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

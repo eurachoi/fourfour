@@ -185,33 +185,46 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         return collectionView.dequeueReusableCellWithReuseIdentifier("BlankCell", forIndexPath: indexPath) as! Cell
     }
     
-    
-    func winRecognition(){
-        var winningColor: CellState = .Blank
-        for cellIndex in 0...99{
-            if(workingBoard[cellIndex].cellState == .Blank||workingBoard[cellIndex].cellState == .Solid){
-                continue
-            }
-            else{
-                for directionNumber in 0...7{
-                    winningColor = workingBoard[cellIndex].cellState
-                    winRecognitionRecursion(cellIndex, direction: directionNumber, checkingCellState: workingBoard[cellIndex].cellState, count: 1)
-                }
-            }
-            if(gameHasBeenWon == true){
-                if(winningColor == .Black){
-                    infoLabel.text = "player one has won!"
-                }
-                if(winningColor == .White){
-                    infoLabel.text = "player two has won!"
-                }
-                boardView.userInteractionEnabled = false
-                break
-            }
-        }
-    }
-    
-    
+	typealias CompletionHandler = (success:Bool) -> Void
+	
+	func winRecognition(completionHandler: CompletionHandler) {
+		var winningColor: CellState = .Blank
+		for cellIndex in 0...99{
+			if(workingBoard[cellIndex].cellState == .Blank||workingBoard[cellIndex].cellState == .Solid){
+				continue
+			}
+			else{
+				for directionNumber in 0...7{
+					winningColor = workingBoard[cellIndex].cellState
+					winRecognitionRecursion(cellIndex, direction: directionNumber, checkingCellState: workingBoard[cellIndex].cellState, count: 1)
+				}
+			}
+			if(gameHasBeenWon == true){
+				boardView.userInteractionEnabled = false
+				if(winningColor == .Black){
+					if(AIPlay){
+						infoLabel.text = "player has won!"
+					}
+					else{
+						infoLabel.text = "player one has won!"
+					}
+				}
+				if(winningColor == .White){
+					if(AIPlay){
+						infoLabel.text = "computer has won!"
+					}
+					else{
+						infoLabel.text = "player two has won!"
+					}
+				}
+				break
+			}
+		}
+		
+		let flag = true // true if download succeed,false otherwise
+		completionHandler(success: flag)
+	}
+	
     func winRecognitionRecursion(index: Int, direction: Int, checkingCellState: CellState, count: Int){
 // 0 1 2
 // 3 . 4
@@ -403,23 +416,30 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                 break
             }
             
-            
+            var executeAIMoveAfterAnimation = false
             if(isBlackPlayersTurn){
                 animatedView.image = UIImage(named: "black")
                 workingBoard[workingBoardIndex].cellState = .Black
                 isBlackPlayersTurn=false
 				if(AIPlay){
 					infoLabel.text = "computer's turn"
-					AIClass.beginAIMove(workingBoard)
+					executeAIMoveAfterAnimation = true
 				}
-                infoLabel.text="player two's turn"
+				else{
+					infoLabel.text="player two's turn"
+				}
 				
             }
             else{
                 animatedView.image = UIImage(named: "white")
                 workingBoard[workingBoardIndex].cellState = .White
                 isBlackPlayersTurn=true
-                infoLabel.text="player one's turn"
+				if(AIPlay){
+					infoLabel.text = "player's turn"
+				}
+				else{
+					infoLabel.text="player one's turn"
+				}
             }
             
             self.boardView.addSubview(animatedView)
@@ -436,12 +456,24 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
                         cellInCollectionView.fillCell(cell, cellIsBlack: false)
                     }
                     animatedView.removeFromSuperview()
-                    self.winRecognition()
-            })
-            
+					self.winRecognition( { (success) -> Void in
+						
+						if success {
+							if(executeAIMoveAfterAnimation){
+								self.executeAIMove()
+							}
+						}
+					})
+				})
         }
     }
-    
+	
+	func executeAIMove(){
+		if(gameHasBeenWon){
+			return
+		}
+		self.collectionView(boardView, didSelectItemAtIndexPath: NSIndexPath(forRow: AIClass.beginAIMove(workingBoard), inSection: 0))
+	}
 }
 
 extension ViewController: UICollectionViewDelegateFlowLayout{
